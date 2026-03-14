@@ -1,0 +1,20 @@
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /e-commerce/
+
+  RewriteRule ^assets/(.*)$ dist/assets/$1 [L]
+  RewriteRule ^favicon\.svg$ public/favicon.svg [L]
+
+  RewriteCond %{REQUEST_URI} ^/e-commerce/backend/ [OR]
+  RewriteCond %{REQUEST_URI} ^/e-commerce/public/ [OR]
+  RewriteCond %{REQUEST_URI} ^/e-commerce/dist/
+  RewriteRule ^ - [L]
+
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  RewriteRule ^ index.php [L]
+</IfModule>
