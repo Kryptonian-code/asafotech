@@ -15,14 +15,8 @@ This backend is a simple PHP + MySQL API designed for local development with XAM
 3. Run any newer migration files from [database/migrations](c:/Users/bigjo/Desktop/apps/e-commerce/backend/database/migrations) when needed.
 4. If you want demo data for testing, import [database/dev_seed.sql](c:/Users/bigjo/Desktop/apps/e-commerce/backend/database/dev_seed.sql).
 
-Current migration:
-- [2026-03-14-firebase-customer-linking.sql](c:/Users/bigjo/Desktop/apps/e-commerce/backend/database/migrations/2026-03-14-firebase-customer-linking.sql)
-
-Optional dev seed:
-- [dev_seed.sql](c:/Users/bigjo/Desktop/apps/e-commerce/backend/database/dev_seed.sql)
 
 Seeded test users:
-- `josephyarteyacquah@gmail.com` / `Joseph123@!`
 - `kwame.buyer@example.com` / `TestUser123!`
 - `ama.shopper@example.com` / `Buyer123!`
 
